@@ -31,6 +31,7 @@
         gapi.auth2.init();
         var auth2 = gapi.auth2.getAuthInstance();
         var googleUser = auth2.currentUser.get();
+        auth2.currentUser.listen();
         console.log(auth2.currentUser.getBasicProfile());
         var profile = googleUser.getBasicProfile();
         console.log(profile);
