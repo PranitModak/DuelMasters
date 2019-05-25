@@ -29,7 +29,8 @@
         function onLoad() {
       gapi.load('auth2', function() {
         gapi.auth2.init();
-        var googleUser = gapi.auth2.currentUser.get();
+        var auth2 = gapi.auth2.getAuthInstance();
+        var googleUser = auth2.currentUser.get();
         console.log(googleUser);
       });
     }
