@@ -44,3 +44,28 @@ io.on('connection', function(socket) {
 setInterval(function() {
   io.sockets.emit('state', players);
 }, 100 / 60);
+
+app.get('/login', function (req, res) {
+  //login controllers go here
+  //trust me it will make sense in a few days
+  //it already makes sense nigga ~nitrox
+});
+
+app.get('/lobby', function (req, res) {
+  //lobby controllers may check session before the reponse header is sent
+  res.sendFile(__dirname + '/views/lobby.html');
+});
+
+app.get('/decks', function (req, res) {
+  res.sendFile(__dirname + '/views/decks.html');
+});
+
+app.get('/stats', function (req, res) {
+  res.sendFile(__dirname + '/views/stats.html');
+});
+
+app.get('/duel', function (req, res) {
+  res.sendFile(__dirname + '/views/duel.html');
+});
+
+app.use('/views', express.static(__dirname + '/views'));
