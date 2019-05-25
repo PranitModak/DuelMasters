@@ -15,8 +15,7 @@ console.log("Server started.");
 
 
 var io = require('socket.io')(serv,{});
-io.on('connection', function(socket) {
-});
+
 
 var players = {};
 io.on('connection', function(socket) {
