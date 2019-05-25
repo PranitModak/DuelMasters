@@ -53,7 +53,7 @@ app.get('/login', function (req, res) {
 
 app.get('/lobby', function (req, res) {
   //lobby controllers may check session before the reponse header is sent
-  res.sendFile(__dirname + '/views/lobby.html');
+  res.sendFile(__dirname + '/views/DuelRoom.html');
 });
 
 app.get('/decks', function (req, res) {
