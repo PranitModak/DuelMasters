@@ -33,6 +33,7 @@
         var googleUser = auth2.currentUser.get();
         console.log(googleUser);
         var profile = googleUser.getBasicProfile();
+        console.log(profile);
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
