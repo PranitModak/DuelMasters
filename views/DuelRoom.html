@@ -31,7 +31,7 @@
         gapi.auth2.init();
         var auth2 = gapi.auth2.getAuthInstance();
         var googleUser = auth2.currentUser.get();
-        var profile = auth2.getBasicProfile();
+        var profile = auth2.currentUser.getBasicProfile();
         console.log(profile);
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
