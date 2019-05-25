@@ -64,8 +64,5 @@ app.get('/stats', function (req, res) {
   res.sendFile(__dirname + '/views/stats.html');
 });
 
-app.get('/duel', function (req, res) {
-  res.sendFile(__dirname + '/views/duel.html');
-});
 
 app.use('/views', express.static(__dirname + '/views'));
