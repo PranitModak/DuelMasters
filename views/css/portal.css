@@ -5,7 +5,7 @@
 
 #header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-  url("http://i63.tinypic.com/xblfut.jpg");
+  url("/views/images/Headerback.png");
   /*url("http://oi64.tinypic.com/5p3qtk.jpg");*/
   background-position: center center;
   background-size: cover;
@@ -79,23 +79,17 @@ body {
 }
 
 main .container-fluid {
-  width: auto;
+  width: 1000px;
   max-width: 1920px;
   overflow: hidden;
-  height: 940px;
+  height: 450px;
   background-color: #262927;
-  margin: -40px 30px 0 30px;
+  margin: -40px 30px 0 300px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   box-shadow: 0px 0px 20px black;
-}
-@media only screen and (max-width: 767px) {
-  main .container-fluid {
-    margin: -40px 10px 0 10px;
-    height: 1200px;
-  }
 }
 
 .nav-pills {
@@ -373,7 +367,8 @@ main .container-fluid {
 #sunny-go-logo {
   position: absolute;
   margin-top: 40px;
-  right: 120px;
+  left: 40px;
+  bottom: 30px;
 }
 
 p.visit {
