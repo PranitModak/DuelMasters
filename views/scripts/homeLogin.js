@@ -3,5 +3,5 @@ jQuery(document).ready(function($) {
 });
 
 function onSignIn(googleUser) {
-    document.location.href = "/lobby";
+    document.location.href = "/Dashboard";
   }

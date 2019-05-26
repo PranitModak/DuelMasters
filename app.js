@@ -52,17 +52,17 @@ app.get('/home', function (req, res) {
   //it already makes sense nigga ~nitrox
 });
 
-app.get('/lobby', function (req, res) {
+app.get('/Dashboard', function (req, res) {
   //lobby controllers may check session before the reponse header is sent
-  res.sendFile(__dirname + '/views/DuelRoom.html');
+  res.sendFile(__dirname + '/views/Portal.html');
 });
 
 app.get('/decks', function (req, res) {
   res.sendFile(__dirname + '/views/decks.html');
 });
 
-app.get('/stats', function (req, res) {
-  res.sendFile(__dirname + '/views/stats.html');
+app.get('/duel', function (req, res) {
+  res.sendFile(__dirname + '/views/DuelRoom.html');
 });
 
 
