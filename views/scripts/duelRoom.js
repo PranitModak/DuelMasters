@@ -3,6 +3,7 @@ function signOut() {
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
+    document.location.href = "/"
   }
   function onLoad() {
   gapi.load('auth2', function() {

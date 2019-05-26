@@ -45,7 +45,8 @@ setInterval(function() {
   io.sockets.emit('state', players);
 }, 100 / 60);
 
-app.get('/login', function (req, res) {
+app.get('/home', function (req, res) {
+  res.sendFile(__dirname + '/client/index.html');
   //login controllers go here
   //trust me it will make sense in a few days
   //it already makes sense nigga ~nitrox
